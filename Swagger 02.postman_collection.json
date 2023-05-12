@@ -1,0 +1,377 @@
+{
+	"info": {
+		"_postman_id": "451ee81b-99cf-48e1-9ba4-a1087cb7437c",
+		"name": "Swagger 02",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26121086",
+		"_collection_link": "https://www.postman.com/develhope-exercise-postman/workspace/develhope-postman-use/collection/26121086-451ee81b-99cf-48e1-9ba4-a1087cb7437c?action=share&creator=26121086&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Welcome message",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5050/welcome",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"welcome"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Welcome message",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5050/welcome",
+							"host": [
+								"localhost"
+							],
+							"port": "5050",
+							"path": [
+								"welcome"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "20"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 12 May 2023 20:41:07 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Welcome to the site!"
+				}
+			]
+		},
+		{
+			"name": "Welcome Math Message",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5050/math/",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"math",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Welcome Math Message",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5050/math/",
+							"host": [
+								"localhost"
+							],
+							"port": "5050",
+							"path": [
+								"math",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "27"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 12 May 2023 20:42:36 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Welcome to the math section"
+				}
+			]
+		},
+		{
+			"name": "Get Division Info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5050/math/division-info",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"math",
+						"division-info"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Division Info",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5050/math/division-info",
+							"host": [
+								"localhost"
+							],
+							"port": "5050",
+							"path": [
+								"math",
+								"division-info"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 12 May 2023 20:44:07 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"Division\",\n    \"minNumberOfOperands\": 2,\n    \"description\": \"The process of calculating the number of times one number is contained within another\",\n    \"properties\": [\n        \"Dividend\",\n        \"Divisor\",\n        \"Quotient\",\n        \"Remainder\"\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Multiplication Value",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5050/math/multiplication?multiplier=5&multiplicand=7",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"math",
+						"multiplication"
+					],
+					"query": [
+						{
+							"key": "multiplier",
+							"value": "5"
+						},
+						{
+							"key": "multiplicand",
+							"value": "7"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Multiplication Value",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5050/math/multiplication?multiplier=5&multiplicand=7",
+							"host": [
+								"localhost"
+							],
+							"port": "5050",
+							"path": [
+								"math",
+								"multiplication"
+							],
+							"query": [
+								{
+									"key": "multiplier",
+									"value": "5"
+								},
+								{
+									"key": "multiplicand",
+									"value": "7"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 12 May 2023 20:49:01 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "35"
+				}
+			]
+		},
+		{
+			"name": "Get Square Value",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5050/math/square/5",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"math",
+						"square",
+						"5"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Square Value",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5050/math/square/5",
+							"host": [
+								"localhost"
+							],
+							"port": "5050",
+							"path": [
+								"math",
+								"square",
+								"5"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 12 May 2023 20:49:45 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "25"
+				}
+			]
+		}
+	]
+}
